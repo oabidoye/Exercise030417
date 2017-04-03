@@ -1,17 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Exercise.Cafe.Core
+﻿namespace Exercise.Cafe.Core
 {
-    public enum ProductTemperatures
-    {
-        Hot,
-        Cold
-    }
-
     public class Product
     {
         public string Name { get; set; }
@@ -19,4 +7,11 @@ namespace Exercise.Cafe.Core
         public  ProductTemperatures Temperature { get; set; }
 
     }
+
+    public enum ProductTemperatures
+    {
+        Hot,
+        Cold
+    }
+
 }

@@ -19,9 +19,11 @@ namespace Exercise.Cafe.Core
 
         public decimal GetStandardBill(List<string> purchasedItems)
         {
-                return purchasedItems == null
-                    ? 0
-                    : _menuItems.Where(item => purchasedItems.Contains(item.Name)).Select(item => item.Price).Sum();
+            if (purchasedItems == null)
+            {
+                throw new ArgumentNullException("Purchased items cannot be null. Valid purchased items are required.", new Exception());
+            }
+                return _menuItems.Where(item => purchasedItems.Contains(item.Name)).Select(item => item.Price).Sum();
         }
     }
 }
