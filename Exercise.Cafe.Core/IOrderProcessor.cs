@@ -4,7 +4,6 @@ namespace Exercise.Cafe.Core
 {
     internal interface IOrderProcessor
     {
-        decimal GetStandardBill(List<string> purchasedItems);
         decimal GetTotalBill(List<Order> purchasedItems);
     }
 }
