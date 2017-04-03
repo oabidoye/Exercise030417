@@ -41,6 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="IOrderProcessor.cs" />
+    <Compile Include="Order.cs" />
     <Compile Include="OrderProcessor.cs" />
     <Compile Include="Product.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

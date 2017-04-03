@@ -4,6 +4,7 @@
     {
         public string Name { get; set; }
         public decimal Price { get; set; }
+        public ProductTypes Type { get; set; }
         public  ProductTemperatures Temperature { get; set; }
 
     }
@@ -14,4 +15,9 @@
         Cold
     }
 
+    public enum ProductTypes
+    {
+        Drink,
+        Food
+    }
 }
